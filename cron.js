@@ -4,7 +4,7 @@ const axios = require('axios');
 const { cacheWithRedis } = require('./cache');
 const logger = require('./utils/logger')
 
-cron.schedule(cronMinutes.EVERY_MINUTE, async function () {
+cron.schedule(cronMinutes.EVERY_10_MINUTE, async function () {
     try {
         let coinsToString = coins.toString();
         let currenciesToString = currencies.toString();
